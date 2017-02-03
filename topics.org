@@ -1,0 +1,24 @@
+* Topics
+** Inheritance and the prototype chain
+  + Javascript has only Objects. Each object has an internal link to another object called its prototype. Each prototype object has its prototype chain, recursively, until the last prototype is `null`. `null` has no prototype, and is the final link in the prototype chain
+
+
+** bind
+  + bind creates a new function, when invoked has its this keyword set to the argument passed in
+
+
+** this
+  + arrow functions in ES6 are lexically scoped(its value is set to the this value of the enclosing execution context)
+
+
+
+
+** IIFEs (immediately invoked function expressions)
+   + module pattern in javascript, return an object instead of a function
+
+
+
+** closures & higher order functions
+
+
+** immutability
