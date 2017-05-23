@@ -5,8 +5,8 @@ person.fullName = function() { return this.firstName
 console.log(person)
 
 var foo = Object.create(person)
-foo.firstName = 'bar';
-foo.lastName = 'baz';
+foo.firstName = 'Austin';
+foo.lastName = 'Powers';
 console.log(foo.fullName())
 var bar = Object.create(foo);
 console.log(bar.fullName())

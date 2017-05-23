@@ -1,43 +1,39 @@
-console.log(this)
+console.log('0::', this)
 
-this.foo = 'bar';
-console.log(this);
+// this.first = 'Chris';
+// this.last = 'Cornell';
+// console.log('1::', this);
 
-var _this = this
+// var _this = this
 
 
-const whatsThis = {
-  first: 'Lady',
-  last: 'Gaga',
-  full: function() {
-    console.log('this::', this);
-    return this.first
-      + ' '
-      + this.last}
-}
-console.log(whatsThis.full());
+// const whatsThis = {
+//   first: 'Lady',
+//   last: 'Gaga',
+//   full: function() {
+//     console.log('this inside whatsThis::', this);
+//     return this.first
+//       + ' '
+//       + this.last}
+// }
+// console.log('2::', whatsThis.full());
 
-// using the bind function to change the `this`
-const whatsThisBind = {
-  first: 'Lady',
-  last: 'Gaga',
-  full: (function() {
-    console.log('this::', this);
-    return this.first
-      + ' '
-      + this.last}).bind(_this)
-}
-console.log(whatsThisBind.full());
+// const norahJones = {first: 'Norah', last: 'Jones'}
 
-// using the arrow function, it rebinds the `this`
-const whatsThisArrow = {
-  first: 'Lady',
-  last: 'Gaga',
-  full: () => {
-    console.log('this::', this);
-    return this.first
-      + ' '
-      + this.last
-  }
-}
-console.log(whatsThisArrow.full());
+// const boundFunction = whatsThis.full.bind(norahJones)
+
+// boundFunction()
+
+// // Arrow functions do not have their own this value.
+// const whatsThisArrow = {
+//   first: 'Zakir',
+//   last: 'Hussain',
+//   full: () => {
+//     console.log('5::', this);
+//     return this.first
+//       + ' '
+//       + this.last
+//   }
+// }
+
+// //console.log('6::', whatsThisArrow.full.bind(_this)())

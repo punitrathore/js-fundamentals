@@ -2,7 +2,7 @@ function greet(){
   return this.greeting;
 }
 
-console.log(greet())
+console.log(greet.call({greeting: 'hello'}))
 
 var greet1 = greet.bind({greeting:"namaste!"});
 console.log(greet1());
