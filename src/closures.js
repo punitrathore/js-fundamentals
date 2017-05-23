@@ -1,3 +1,17 @@
+function makeCounter(initValue) {
+  let counter = initValue || 0
+  return {
+    get() {return counter},
+    inc() {counter++}
+  }
+}
+
+let c = makeCounter(10)
+console.log(c.get())
+c.inc()
+console.log(c.get())
+
+
 function add(a,b){
   return a + b
 }
